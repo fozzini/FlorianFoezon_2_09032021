@@ -1,0 +1,13 @@
+
+@font-face {
+font-family: 'droid_sansregular';
+    src: url('police/DroidSans-webfont.eot');
+    src: url('police/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/DroidSans-webfont.woff') format('woff'),
+         url('police/DroidSans-webfont.ttf') format('truetype'),
+         url('police/DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
