@@ -1,5 +1,6 @@
-
-@font-face {
+/* Définition des polices personnalisées */
+@font-face
+{
     font-family: 'raleway';
     src: url('raleway-regular-webfont.eot');
     src: url('raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -9,14 +10,234 @@
          url('raleway-regular-webfont.svg#ralewayregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /* Eléments principaux de la page */
 
 body
 {
+    display:flex;
+    flex-direction:column;
     font-family: 'raleway', Arial, sans-serif;
+    width: 1200px;
+    margin: auto;
+}
+body h1
+{
+    font-weight: bold;
+    font-size: large;
+}
+body h2, #filtres a
+{
+    font-size:small;
+    font-weight: bold;
+    
+}
+body h3, h4, li
+{
+    font-size: small;
+    color:rgb(71, 71, 71);
+    font-weight:100;
+}
+
+/* Header*/
+header
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+#en-tête
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center ;
+}
+
+header h1
+{
+    margin-top: 3%;
+}
+
+header h3
+{
+    margin-top: 0px;
+}
+#liens
+{
+    display:flex;
+}
+#loisirs a
+{
+    font-size:small;
+    text-decoration: none;
+    color: black;
+    padding:40px;
+}
+#loisirs a:hover
+{
+    border-top: 2px solid #0065FC;  
+}
+#inscription a
+{
+    font-size:small;
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bold;
+    margin:20px; 
+}
+#barre_de_recherche
+{
+    display:flex;
+}
+
+#barre_de_recherche i
+{
+    background-color:#F2F2F2 ;
+    border-radius:15px 0px 0px 15px ;
+    padding:15px;
+    
+}
+
+#recherche
+{
+    font-weight: bold;
+    border:none;
+    border-color: #F2F2F2;
+    padding-left: 15px;
+    border-top-style:solid;
+    border-bottom-style:solid;
+    border-width: 1px;
+}
+
+#barre_de_recherche button
+{
+    background-color:#0065FC;
+    border-radius:0px 15px 15px 0px;
+    color:white;
+    border:none;
+    padding:15px;
+}
+
+#filtres
+{
+    display:flex;
+    flex-direction:row;
+    align-items: baseline;
+    
+}
+#filtres h2
+{
+    margin-right:15px;
+}
+#filtres i
+{
+    border-radius: 75px;
+    background-color:#DEEBFF ;
+    color: #0065FC;
+    padding:15px;
+}
+#filtres a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color:black
+}
+
+.filtres
+{
+    margin:15px;
+    border-style: solid;
+    border-color:#F2F2F2;
+    border-radius: 25px;
+    border-width: 2px;
+    padding-right: 15px;
+    border-left: none;
+}
+
+#information i
+{
+font-size: x-small;
+padding: 5px 7px 5px 7px;
+margin: 10px;
+color:#0065FC ;
+border-style: solid;
+border-width: 1px;
+border-radius: 25px;
+border-color:#F2F2F2 ;
+}
+
+section
+{
+    display: flex;
+    flex-direction: row;
+}
+#hébergements
+{
+    background: #F2F2F2;
+    width: 66%;
+    margin: 15px;
+    border-radius: 15px;
+}
+aside
+{
+    background: #F2F2F2;
+    width: 33%;
+    margin: 15px;
+    border-radius: 15px;
+}
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    
+}
+.footer
+{
+    width: 33%;
 }
 
 
+.Bannière h3
+{
+    font-size:small;
+    font-weight: bolder;
+    color:black;
+}
+
+.Bannière
+{
+    background-image: url('images/hebergements/4_small/marcus-loke.jpg') no-repeat;
+}
+
+
+.stars
+{
+    display: flex;
+    flex-direction: row;
+    font-size: x-small;
+    color: #0065FC;
+}
+
+.bluestar
+{
+    display: flex;
+    flex-direction: row;
+    font-size: x-small;
+    color: #0065FC;
+}
+.greystar
+{
+    display: flex;
+    flex-direction: row;
+    font-size: x-small;
+    color: #e6dfdf;
+}
+
+ul 
+{
+    padding: 0;
+    list-style-type: none;
+}

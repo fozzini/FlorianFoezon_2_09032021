@@ -10,14 +10,19 @@
     <body>
     	<div id="bloc page">
     		<header>
-    			<section id="Titre principal">
+    			
                     <div id="en-tête">
                     	<img src="images/logo/Reservia.svg" alt="Logo Reservia" />
-                    	<div>
-                    		<a href="#">Hébergement</a>
-                    		<a href="#">Activités</a>
-                    		<a href="#">S'inscrire</a>
-                    	</div>
+						<div id="liens">
+							<div id="loisirs">
+								<a href="#hébergements">Hébergements</a>
+								<a href="#Activités à Marseille">Activités</a>
+								
+							</div>
+							<div id="inscription">
+								<a href="#">S'inscrire</a>
+							</div>
+						</div>
                     </div>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1> 
                     <h3>En plein centre ville ou en pleine nature</h3>
@@ -30,16 +35,16 @@
                     </div>
                     <div id= "filtres">
                     	<h2>Filtres</h2>
-                    	<div><i class="fas fa-money-bill-wave"></i>
+                    	<div class="filtres" ><i class="fas fa-money-bill-wave"></i>
                     	<a href="#">Économique</a></div>
-                    	<div><i class="fas fa-child"></i>
+                    	<div class="filtres"><i class="fas fa-child"></i>
                     	<a href="#">Familial</a></div>
-                    	<div><i class="fas fa-heart"></i>
+                    	<div class="filtres" ><i class="fas fa-heart"></i>
                     	<a href="#">Romantique</a></div>
-                    	<div><i class="fas fa-dog"></i>
+                    	<div class="filtres" ><i class="fas fa-dog"></i>
                     	<a href="#">Animaux autorisés</a></div>
                     </div>
-                    <div>  
+                    <div id="information">  
                     	<h3>
                     		<i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
                     	</h3>
@@ -47,12 +52,23 @@
     		</header>
     		<main>
     			<section>
-    				<div>
+    				<div id="hébergements">
     					<h1>Hébergements à Marseille</h1>
+						<div id="vignettes_hébergement">
+							<div class="Bannière">   							
+    							<h3></h3>
+    							<h4></h4>
+    								<div class="stars">
+    									<div class="bluestar"><i class="fas fa-star"></i></div>
+    									<div class="bluestar"><i class="fas fa-star"></i></div>
+    									<div class="bluestar"><i class="fas fa-star"></i></div>
+    									<div class="greystar"><i class="fas fa-star"></i></div>
+									</div>
+    						</div>
     						<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
@@ -62,7 +78,17 @@
     						<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
+    									<div><i class="fas fa-star"></i></div>
+    									<div><i class="fas fa-star"></i></div>
+    									<div><i class="fas fa-star"></i></div>
+    									<div><i class="fas fa-star"></i></div>
+									</div>
+    						</div>
+							<div class="Bannière">   							
+    							<h3></h3>
+    							<h4></h4>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
@@ -72,7 +98,7 @@
     						<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
@@ -82,33 +108,14 @@
     						<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
 									</div>
     						</div>
-    						<div class="Bannière">   							
-    							<h3></h3>
-    							<h4></h4>
-    								<div>
-    									<div><i class="fas fa-star"></i></div>
-    									<div><i class="fas fa-star"></i></div>
-    									<div><i class="fas fa-star"></i></div>
-    									<div><i class="fas fa-star"></i></div>
-									</div>
-    						</div>
-    						<div class="Bannière">   							
-    							<h3></h3>
-    							<h4></h4>
-    								<div>
-    									<div><i class="fas fa-star"></i></div>
-    									<div><i class="fas fa-star"></i></div>
-    									<div><i class="fas fa-star"></i></div>
-    									<div><i class="fas fa-star"></i></div>
-									</div>
-    						</div>
+						</div> 							
     					<a href="#">Afficher plus</a>
     				</div>
     				<aside>
@@ -119,7 +126,7 @@
     					<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
@@ -129,7 +136,7 @@
     						<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
@@ -139,7 +146,7 @@
     						<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
@@ -154,7 +161,7 @@
     					<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
@@ -164,7 +171,7 @@
     						<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
@@ -174,7 +181,7 @@
     						<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
@@ -184,7 +191,7 @@
     						<div class="Bannière">   							
     							<h3></h3>
     							<h4></h4>
-    								<div>
+    								<div class="stars">
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
     									<div><i class="fas fa-star"></i></div>
@@ -195,7 +202,7 @@
     			</section>
        		</main>
     		<footer>
-    			<div>
+    			<div class="footer">
     				<h2>A propos</h2>
     				<ul>
     					<li>Fonctionnement du site</li>
@@ -203,7 +210,7 @@
     					<li>Données et confidentialité</li>
     				</ul>
     			</div>
-    			<div>
+    			<div class="footer">
     				<h2>Nos hébergements</h2>
     				<ul>
     					<li>Charte qualité</li>
@@ -211,12 +218,11 @@
     					
     				</ul>
     			</div>
-    			<div>
+    			<div class="footer">
     				<h2>Assistance</h2>
     				<ul>
     					<li>Centre d'aide</li>
     					<li>Nous contacter</li>
-    					
     				</ul>
     			</div>
     		</footer>
