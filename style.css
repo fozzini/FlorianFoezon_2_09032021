@@ -119,7 +119,6 @@ header h3
     border:none;
     padding:15px;
 }
-
 #filtres
 {
     display:flex;
@@ -144,7 +143,6 @@ header h3
     font-weight: bold;
     color:black
 }
-
 .filtres
 {
     margin:15px;
@@ -155,7 +153,6 @@ header h3
     padding-right: 15px;
     border-left: none;
 }
-
 #information i
 {
 font-size: x-small;
@@ -168,20 +165,82 @@ border-radius: 25px;
 border-color:#F2F2F2 ;
 }
 
+/*section1*/
+
 section
 {
-    display: flex;
-    flex-direction: row;
+    display: flex;  
 }
 #hébergements
 {
+    display: flex;
+    flex-direction: column;
     background: #F2F2F2;
     width: 66%;
     margin: 15px;
+    border-radius: 25px;
+    padding: 25px;
+    margin-left: 0px;
+}
+#hébergements h3
+{
+    font-size:small;
+    font-weight: bolder;
+    color:black;
+    margin-bottom: 5px;
+}
+#hébergements h4
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.stars
+{
+    display: flex;
+    font-size: x-small;
+    margin-top: 5px;
+}
+#vignettes_hébergements
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.vignette
+{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+    border-style: solid;
+    border-color: white;
     border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
+}
+.images
+{
+   
+    border-radius: 15px 15px 0px 0px;
+    margin: 0px;
+    border-bottom: none;
+    
+    
+}
+
+.description
+{  
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px;
+    border-top: none;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    margin-top: 0px;
+    
 }
 aside
 {
+    
     background: #F2F2F2;
     width: 33%;
     margin: 15px;
@@ -199,27 +258,6 @@ footer
     width: 33%;
 }
 
-
-.Bannière h3
-{
-    font-size:small;
-    font-weight: bolder;
-    color:black;
-}
-
-.Bannière
-{
-    background-image: url('images/hebergements/4_small/marcus-loke.jpg') no-repeat;
-}
-
-
-.stars
-{
-    display: flex;
-    flex-direction: row;
-    font-size: x-small;
-    color: #0065FC;
-}
 
 .bluestar
 {
