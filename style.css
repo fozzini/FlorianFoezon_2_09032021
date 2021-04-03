@@ -42,6 +42,7 @@ body h3, h4, li
 header, main
 {
     padding: 3%;
+    padding-top: 0%;
 }
 /* Header*/
 header
@@ -49,6 +50,7 @@ header
     display: flex;
     flex-direction: column;
     margin-top: 5%;
+    padding-bottom: 0%;
 }
 .en-tête
 {
@@ -401,7 +403,7 @@ aside
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     background-color: white; 
     width: 23%;
-    height: 400px;
+    height: 390px;
 }
 .vignettes_double
 {   
