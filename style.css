@@ -57,7 +57,7 @@ header
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    align-items:center ;
+    align-items:center;
 }
 header h1
 {
@@ -67,20 +67,25 @@ header h3
 {
     margin-top: 0px;
 }
-#liens
-{
-    display:flex;
+#logo
+{   
+    flex-grow: 2;
 }
 #loisirs a
 {
     font-size:small;
     text-decoration: none;
     color: black;
-    padding:40px;
+    padding:35px;
 }
 #loisirs a:hover
 {
     border-top: 2px solid #0065FC;  
+}
+#loisirs
+{
+    display: flex;
+    
 }
 #inscription a
 {
@@ -90,6 +95,8 @@ header h3
     font-weight: bold;
     margin:20px; 
 }
+
+
 #barre_de_recherche
 {
     display:flex;
@@ -110,6 +117,7 @@ header h3
     border-top-style:solid;
     border-bottom-style:solid;
     border-width: 1px;
+    
 }
 #barre_de_recherche button
 {
@@ -118,6 +126,9 @@ header h3
     color:white;
     border:none;
     padding:15px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+
 }
 #filtres
 {
@@ -154,16 +165,33 @@ header h3
     padding-right: 15px;
     border-left: none;
 }
+#filtre_mobile
+{
+    display: flex;
+    flex-direction: row;
+}
+#information
+{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    padding-bottom: 25px;
+    
+}
+#information h3
+{
+    padding-left: 0%;
+}
 #information i
 {
-font-size: x-small;
-padding: 5px 7px 5px 7px;
-margin: 10px;
-color:#0065FC ;
-border-style: solid;
-border-width: 1px;
-border-radius: 25px;
-border-color:#F2F2F2 ;
+    font-size: x-small;
+    padding: 5px 7px 5px 7px;
+    margin: 10px;
+    color:#0065FC ;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color:#F2F2F2 ;
 }
 
 /*section1*/
@@ -171,7 +199,7 @@ border-color:#F2F2F2 ;
 section
 {
     display: flex;
-    height: 500px;
+    height: 600px;
 }
 section h1
 {
@@ -509,4 +537,109 @@ ul
 li
 {
     margin-bottom: 2%;
+}
+
+@media screen and (max-width:375px)
+{
+    /*header*/
+
+    header,#filtres
+    {   
+        flex-direction: column;
+        height: auto;
+        width: 375px;
+        margin:0;
+        padding: 25px;
+        
+    }
+    #loisirs a
+    {
+        width: auto;
+        height:30px;
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        align-items: center;
+        padding-right: 50px;
+        padding-bottom: 0px;
+    }
+    #loisirs a:hover
+    {   
+        border-top: none;
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        
+    }
+    #inscription
+    {
+        order: -1;
+    }
+    #logo
+    {   
+        order:-1;
+    }
+    .en-tête
+    {   
+        flex-wrap: wrap;  
+        width: 100%;
+        height: auto;
+    }
+    .mobile
+    {
+    padding-left: 25px;
+    padding-right: 65px;
+    }
+    header h1, header h3
+    {
+        padding-left: 25px;
+        width:250px;
+    }
+    #barre_de_recherche
+    {
+        padding-left: 25px;
+        
+    }
+    #barre_de_recherche button
+    {
+        background-image: url(images/logo/search-solid.svg);
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: center;
+        border-radius: 15px;
+        width: 47px;
+        height: 47px;
+    }
+    #barre_de_recherche h2
+    {
+        visibility: hidden;
+        
+    }
+    #barre_de_recherche
+    {
+        border-style: solid;
+        width: 268px;
+        margin-left: 25px;
+        padding-left: 0;
+        border-radius: 15px;
+        border-width: thin;
+        border-color: #F2F2F2;
+    }
+    #filtres
+    {
+        height: 200px;
+        
+    }
+    .filtres
+    {
+        margin-top:5px;
+        margin-bottom: 5px;
+        margin-left:0;
+    }
+    #information
+    {
+        padding-left:15px;
+        width: 300px;
+        padding-bottom: 0;
+    }
+    /*section*/
+    
 }
