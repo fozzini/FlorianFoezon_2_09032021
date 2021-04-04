@@ -541,6 +541,10 @@ li
 
 @media screen and (max-width:375px)
 {
+    #bloc_page, main,section,div
+    {
+        height: auto;
+    }
     /*header*/
 
     header,#filtres
@@ -641,5 +645,114 @@ li
         padding-bottom: 0;
     }
     /*section*/
+    section
+    {
+        height: auto;
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    aside
+    {
+        order: -1;
+        width: 268px;
+        height: auto;
+        border-radius: 0;
+        
+    }
+    .vignette_aside
+    {  
+        margin-bottom: 15px;
+    }
+    .images_aside
+    {
+        width:120px;
+        height:120px;
+    }
+    #hébergements
+    {
+        height: auto;
+        background-color: white;
+        padding-top: 15px;
+    }
+    #vignettes_hébergements
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        
+    }
+    .vignette_section1
+    {
+        display: flex;
+        flex-direction: column;
+        width: 268px;
+        margin-bottom: 15px;
+        height: 100px;
+    }
+
+    /*section2*/
+    #section_2
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 0px;
+    }
+    #Bloc_vignettes
+    {
+        height: auto;
+        flex-direction: column;
+        padding-left: 25px;
+        
+    }
+    #section_2 h1
+    {
+        padding-left: 25px;
+    }
+
+    .vignettes_simple, .vignettes_double, #pomègues, #frioul
+    {
+        width: 268px;
+        height: 150px;
+        margin-bottom: 25px;
+    }
+    #Vieux_port
+    {
+        padding: 15px;
+        background-size: cover;
+        background-position:center;
+    }
+    }
+    #Fort_de_Pomègues
+    {
+        padding:40px;
+        background-size: cover;
+        background-position:center;
+    }
+    
+    #Parc_National_des_Calanques
+    {
+        padding: 15px;
+        background-size: cover;
+        background-position:center;
+    }
+    
+    #Notre-Dame-de-la-Garde
+    {
+        padding: 55px;
+    }
+    #Parc-Longchamp
+    {
+        padding: 55px;
+        background-size: cover;
+        background-position:center;
+    }
+   footer
+   {
+       height: auto;
+   }
     
 }
