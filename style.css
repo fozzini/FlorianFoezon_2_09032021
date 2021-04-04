@@ -725,7 +725,7 @@ li
         background-size: cover;
         background-position:center;
     }
-    }
+    
     #Fort_de_Pomègues
     {
         padding:40px;
@@ -750,9 +750,20 @@ li
         background-size: cover;
         background-position:center;
     }
-   footer
-   {
-       height: auto;
-   }
-    
+
+    /*footer*/
+
+    footer
+    {
+        flex-direction: column;
+        margin-left: 35px;
+        height: auto;
+        width: 375px;
+
+    }
+    .footer
+    {
+        width:268px;
+    }
 }
+
