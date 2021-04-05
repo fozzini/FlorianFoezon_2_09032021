@@ -538,8 +538,93 @@ li
 {
     margin-bottom: 2%;
 }
+@media screen and (max-width:991px)
+{
 
-@media screen and (max-width:375px)
+    body
+    {
+        width:768px;
+    }
+    .en-tête
+    {
+        width: 740px;
+    }
+    header,#filtres
+    {   
+        flex-direction: column;
+        height: auto;
+        width: 768px;
+        margin:0;
+        padding: 25px;
+        
+    }
+    
+    /*section*/
+    section
+    {
+        height: auto;
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+    }
+    aside
+    {
+        order: -1;
+        width: 700px;
+        margin-bottom:25px
+    }
+    .en-tête
+    {
+        width:700px;
+    }
+    #bloc_vignettes
+    {
+        flex-direction: row;
+        
+    }
+    .vignette_aside
+    {
+        height: 100px;
+        width: 220px;
+    }
+
+    #hébergements
+    {
+        height:500px;
+        width:700px;
+    }
+    .vignette_section1
+    {
+        height:80px;
+    }
+    /*section2*/
+
+    #Bloc_vignettes
+    {
+        width: 750px;
+    }
+    .vignettes_simple
+    {
+        height: 310px;
+    }
+    .Colonne_double_vignette
+    {
+        height: 310px;
+    }
+    #pomègues
+    {
+        height: 150px;
+    }
+    #frioul
+    {
+        height: 128px;
+    }
+    .vignettes_double
+    {
+        height:142px;
+    }
+}
+@media screen and (max-width:768px)
 {
     #bloc_page, main,section,div
     {
@@ -661,8 +746,15 @@ li
         border-radius: 0;
         
     }
+    #bloc_vignettes
+    {
+        flex-direction: column;
+        height: auto;
+    }
     .vignette_aside
     {  
+        width: 268px;
+        height:120px ;
         margin-bottom: 15px;
     }
     .images_aside
