@@ -19,8 +19,9 @@ body
     display:flex;
     flex-direction:column;
     font-family: 'raleway', Arial, sans-serif;
-    width: 1200px;
-    margin: auto;
+    width: auto;
+    height:auto;
+    margin: 0px;
 }
 body h1
 {
@@ -49,7 +50,6 @@ header
 {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
     padding-bottom: 0%;
 }
 .en-tête
@@ -84,8 +84,7 @@ header h3
 }
 #loisirs
 {
-    display: flex;
-    
+    display: flex;  
 }
 #inscription a
 {
@@ -95,8 +94,6 @@ header h3
     font-weight: bold;
     margin:20px; 
 }
-
-
 #barre_de_recherche
 {
     display:flex;
@@ -123,12 +120,15 @@ header h3
 {
     background-color:#0065FC;
     border-radius:0px 15px 15px 0px;
-    color:white;
     border:none;
     padding:15px;
     padding-bottom: 0%;
     padding-top: 0%;
-
+}
+#barre_de_recherche a
+{
+    text-decoration: none;    
+    color:white;   
 }
 #filtres
 {
@@ -136,11 +136,6 @@ header h3
     flex-direction:row;
     align-items: baseline;
     
-}
-#filtres h2
-{
-    font-weight: bolder;
-    margin-right:15px;
 }
 #filtres i
 {
@@ -150,13 +145,7 @@ header h3
     padding:15px;
 }
 #filtres a
-{
-    text-decoration: none;
-    font-weight: bold;
-    color:black
-}
-.filtres
-{
+{   
     margin:15px;
     border-style: solid;
     border-color:#F2F2F2;
@@ -164,6 +153,9 @@ header h3
     border-width: 2px;
     padding-right: 15px;
     border-left: none;
+    text-decoration: none;
+    font-weight: bold;
+    color:black
 }
 #filtre_mobile
 {
@@ -199,7 +191,7 @@ header h3
 section
 {
     display: flex;
-    height: 600px;
+    height: auto;
 }
 section h1
 {
@@ -210,9 +202,10 @@ section h1
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background: #F2F2F2;
     width: 75%;
+    height: auto;
     margin: 0px 15px 0px 0px;
     border-radius: 15px;
     padding: 25px;
@@ -263,15 +256,15 @@ section h1
     display:flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    height: 500px; 
+    height: auto;
 }
-.vignette_section1
+#vignettes_hébergements a
 {
     display:flex;
     flex-direction: column;
     background-color: white;
     width: 30%;
-    height: 20%;
+    height: 23%;
     border-style: solid;
     border-color: white;
     padding-bottom: 80px;
@@ -287,10 +280,9 @@ section h1
     border-radius: 15px 15px 0px 0px;
 }
 .description_section1
-{  
+{    
     border-radius: 0px 0px 15px 15px;
     border-top: none;
-    padding-bottom: 15px;
     padding-left: 10px;
 }
 #Auberge_la_Cannebière
@@ -326,6 +318,7 @@ aside
     flex-direction: column;
     background: #F2F2F2;
     width: 30%;
+    height: auto;
     border-radius: 15px;
     padding: 25px;
     margin-left: 0px;
@@ -337,23 +330,24 @@ aside
     flex-direction: column;
     justify-content: space-between;   
 }
-.vignette_aside h3
+#bloc_vignettes h3
 {
     font-size:small;
     font-weight: bolder;
     color:black;
     margin-bottom: 5px;
 }
-.vignette_aside h4
+#bloc_vignettes h4
 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.vignette_aside .stars
+#bloc_vignettes .stars
 {
-    margin-top: auto
+    margin-top: auto;
+    margin-bottom: 3%;
 }
-.vignette_aside
+#bloc_vignettes a
 {
     display:flex;
     flex-direction: row;
@@ -363,6 +357,7 @@ aside
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     height: 30%;
     background-color: white;
+    text-decoration: none;
 }
 .images_aside
 {
@@ -402,7 +397,7 @@ aside
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 470px;
+    height: auto;
     margin-top:4%;  
     margin-bottom: 0%;
 }
@@ -410,7 +405,13 @@ aside
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;   
+    justify-content: space-between;
+    height: auto;   
+}
+#Bloc_vignettes a
+{
+    color: black;
+    text-decoration: none;
 }
 .Colonne_double_vignette
 {
@@ -418,6 +419,7 @@ aside
     flex-direction: column;
     justify-content: space-between;
     width: 23%;
+    height:auto;
 }
 .images_section2
 {   
@@ -431,25 +433,21 @@ aside
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     background-color: white; 
     width: 23%;
-    height: 390px;
 }
 .vignettes_double
 {   
     border-radius: 15px;
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     background-color: white; 
-    height:180px;
 }
 .vignettes_simple .images_section2
 {
-    height: 82px;
-    padding: 50%;
+    padding: 45%;
     
 }
 .vignettes_double .images_section2
 {
-    padding: 25%;
-    
+    padding: 18%;
 }
 .Nom_activité
 {
@@ -461,16 +459,14 @@ aside
     border-radius: 15px;
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     background-color: white;
-    height:220px;
 }
 #frioul
 {
     border-radius: 15px;
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     background-color: white;
-    height: 150px;
-}
 
+}
 #Vieux_port
 {
     background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");   
@@ -479,16 +475,15 @@ aside
 {
     background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     background-size:cover;
-    padding: 25%;
-    height:18%
+    padding: 23%;
+
 }
 #Iles_du_Frioul
 {
     background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     background-size:cover;
-    background-position:top;
-    padding: 15%;
-    height: 16%;
+    background-position: center;
+    padding: 12%;
 }
 #Parc_National_des_Calanques
 {
@@ -505,7 +500,7 @@ aside
 {
     background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     background-size:cover;
-    background-position:top;
+    background-position:center;
 }
 
 /*footer*/
@@ -517,7 +512,6 @@ footer
     flex-direction: row;
     height: 50%;
     padding: 3%;
-    margin-bottom: 4%;
     border-style: solid;
     border-left: none;
     border-top: none;
@@ -538,118 +532,143 @@ li
 {
     margin-bottom: 2%;
 }
+.footer a
+{
+    text-decoration: none;
+    color:black;
+}
+
+/*Media-queries tablettes*/
+
 @media screen and (max-width:991px)
 {
 
-    body
+    /*body*/
+
+    main
     {
-        width:768px;
-    }
-    .en-tête
-    {
-        width: 740px;
-    }
-    header,#filtres
-    {   
-        flex-direction: column;
-        height: auto;
-        width: 768px;
-        margin:0;
-        padding: 25px;
+        padding: 0;
         
     }
-    
-    /*section*/
     section
     {
-        height: auto;
-        width: 768px;
         display: flex;
         flex-direction: column;
     }
+
+    /*aside*/
+
     aside
     {
         order: -1;
-        width: 700px;
-        margin-bottom:25px
-    }
-    .en-tête
-    {
-        width:700px;
-    }
+        width:auto;
+        margin-bottom:25px;   
+    }   
     #bloc_vignettes
     {
         flex-direction: row;
         
     }
-    .vignette_aside
+    #bloc_vignettes a
     {
-        height: 100px;
-        width: 220px;
+        height: 120px;
+        width: 280px;
     }
+
+    /*hébergement*/
 
     #hébergements
     {
-        height:500px;
-        width:700px;
+        width:auto;
+        margin:0px;
+        height:auto;
     }
-    .vignette_section1
+    #vignettes_hébergements a
     {
-        height:80px;
+        height:auto;
+        padding: 0;
+        margin-bottom: 25px;
     }
+    .images_section1
+    {
+        height:150px;
+        padding: 0;
+        background-position:bottom;
+    }
+   
     /*section2*/
 
-    #Bloc_vignettes
-    {
-        width: 750px;
-    }
-    .vignettes_simple
-    {
-        height: 310px;
-    }
-    .Colonne_double_vignette
-    {
-        height: 310px;
-    }
-    #pomègues
-    {
-        height: 150px;
-    }
-    #frioul
-    {
-        height: 128px;
-    }
-    .vignettes_double
-    {
-        height:142px;
-    }
-}
-@media screen and (max-width:768px)
-{
-    #bloc_page, main,section,div
+    #section_2
     {
         height: auto;
+        width: auto;
+        margin-bottom: 25px;
+    }
+ 
+}
+
+/*Media-queries portables*/
+
+@media screen and (max-width:790px)
+{
+    body
+    {
+        height: auto;
+        width: auto;
+    }
+    body h3, body h4, body a
+    {
+        font-size: medium;
+    }
+    body h2
+    {
+        font-size: large;
+    }
+    body h1
+    {
+        font-size: x-large;
     }
     /*header*/
-
-    header,#filtres
+    header
     {   
         flex-direction: column;
-        height: auto;
-        width: 375px;
         margin:0;
-        padding: 25px;
-        
+        padding:0;
+    }
+    .en-tête
+    {   
+        flex-wrap: wrap;  
+        width: 100%;
+        height: auto;
+        padding-top: 25px;
+    }
+    
+    #logo
+    {   
+        width: 50%;
+        margin:0px 0px 0px 25px;
+        order:-1;
+    }
+    #inscription
+    {
+        margin: 0;
+        order: -1;
+    }
+    #loisirs
+    {
+        width: 100%;
+        justify-content: space-around;
     }
     #loisirs a
     {
-        width: auto;
         height:30px;
         border-top: none;
         border-bottom: 2px solid #F2F2F2;
-        align-items: center;
-        padding-right: 50px;
         padding-bottom: 0px;
+        padding-left: 0;
+        padding-right: 0;
+        width:50%;
+        text-align: center;
     }
     #loisirs a:hover
     {   
@@ -658,34 +677,17 @@ li
         border-bottom: 2px solid #0065FC;
         
     }
-    #inscription
-    {
-        order: -1;
-    }
-    #logo
-    {   
-        order:-1;
-    }
-    .en-tête
-    {   
-        flex-wrap: wrap;  
-        width: 100%;
-        height: auto;
-    }
-    .mobile
-    {
-    padding-left: 25px;
-    padding-right: 65px;
-    }
     header h1, header h3
     {
-        padding-left: 25px;
-        width:250px;
+        margin-left: 25px;
+    }
+    #loisirs a, #inscription a, #recherche, #filtres a
+    {
+        font-size: medium;
     }
     #barre_de_recherche
     {
-        padding-left: 25px;
-        
+        margin-left: 25px;
     }
     #barre_de_recherche button
     {
@@ -700,68 +702,88 @@ li
     #barre_de_recherche h2
     {
         visibility: hidden;
-        
     }
     #barre_de_recherche
     {
         border-style: solid;
-        width: 268px;
+        width: auto;
         margin-left: 25px;
         padding-left: 0;
+        padding-right: 25px;
         border-radius: 15px;
         border-width: thin;
         border-color: #F2F2F2;
     }
+    #recherche
+    {
+        width: 100%;
+    }
     #filtres
     {
-        height: 200px;
-        
-    }
-    .filtres
+        flex-direction: column;
+        margin: 0px 0px 0px 25px;      
+    }  
+    #filtres a
     {
-        margin-top:5px;
-        margin-bottom: 5px;
-        margin-left:0;
+        margin: 0px 15px 15px 0px;
     }
     #information
     {
-        padding-left:15px;
-        width: 300px;
-        padding-bottom: 0;
+        margin-left:15px;   
     }
+
     /*section*/
+
     section
     {
         height: auto;
-        width: 375px;
+        width: auto;
         display: flex;
         flex-direction: column;
+    }
+    #vignettes_hébergements h3 
+    {
+        font-size:medium;
     }
   
     aside
     {
         order: -1;
-        width: 268px;
         height: auto;
         border-radius: 0;
-        
+        margin-bottom: 0;
+        padding-top:0;
+    }
+    aside .en-tête
+    {
+        padding-bottom: 15px;
+    }
+    .en-tête i
+    {
+        font-size: x-large;
+    }
+    #bloc_vignettes h3
+    {
+        font-size: medium;
     }
     #bloc_vignettes
     {
         flex-direction: column;
         height: auto;
     }
-    .vignette_aside
+    #bloc_vignettes a
     {  
-        width: 268px;
+        width: auto;
         height:120px ;
         margin-bottom: 15px;
     }
     .images_aside
-    {
-        width:120px;
+    {     
         height:120px;
     }
+
+    /*hébergements*/
+
     #hébergements
     {
         height: auto;
@@ -773,89 +795,86 @@ li
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        height: auto;
-        
+        height: auto;   
     }
-    .vignette_section1
+    #vignettes_hébergements a
     {
         display: flex;
         flex-direction: column;
-        width: 268px;
+        width: auto;
         margin-bottom: 15px;
-        height: 100px;
+        height: auto;
+    }
+    .description_section1
+    {
+        padding-bottom:10px ;
     }
 
-    /*section2*/
+       /*section2*/
+
     #section_2
     {
         display: flex;
         flex-direction: column;
+        width: auto;
         height: auto;
         margin-top: 0px;
     }
     #Bloc_vignettes
     {
         height: auto;
+        width: auto;
         flex-direction: column;
-        padding-left: 25px;
-        
+        padding-left: 25px;   
     }
     #section_2 h1
     {
         padding-left: 25px;
     }
-
-    .vignettes_simple, .vignettes_double, #pomègues, #frioul
+    .Colonne_double_vignette
     {
-        width: 268px;
-        height: 150px;
+        width:auto;
+    }
+    .vignettes_simple, #pomègues, #frioul,.vignettes_double
+    {
+        width: auto;
+        height:200px;
         margin-bottom: 25px;
+        margin-right: 25px;
     }
-    #Vieux_port
+    #section_2 .images_section2
     {
-        padding: 15px;
+        padding:10%;
         background-size: cover;
         background-position:center;
-    }
-    
-    #Fort_de_Pomègues
-    {
-        padding:40px;
-        background-size: cover;
-        background-position:center;
-    }
-    
-    #Parc_National_des_Calanques
-    {
-        padding: 15px;
-        background-size: cover;
-        background-position:center;
-    }
-    
-    #Notre-Dame-de-la-Garde
-    {
-        padding: 55px;
-    }
-    #Parc-Longchamp
-    {
-        padding: 55px;
-        background-size: cover;
-        background-position:center;
-    }
+    } 
 
     /*footer*/
 
     footer
     {
         flex-direction: column;
-        margin-left: 35px;
         height: auto;
-        width: 375px;
-
+        padding-left: 25px;
     }
     .footer
     {
-        width:268px;
-    }
+        width:100%;
+        padding-bottom:20px;
+    }   
 }
-
+/*très petits écrans*/
+@media screen and (max-width:675px)
+{
+    .vignettes_simple, #pomègues, #frioul,.vignettes_double
+    {
+        
+        height:200px;
+        
+    }
+    #section_2 .images_section2
+    {
+        padding:13%;
+       
+    } 
+}
