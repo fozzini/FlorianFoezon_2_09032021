@@ -685,10 +685,6 @@ li
     {
         font-size: medium;
     }
-    #barre_de_recherche
-    {
-        margin-left: 25px;
-    }
     #barre_de_recherche button
     {
         background-image: url(images/logo/search-solid.svg);
@@ -709,7 +705,7 @@ li
         width: auto;
         margin-left: 25px;
         padding-left: 0;
-        padding-right: 25px;
+        margin-right: 25px;
         border-radius: 15px;
         border-width: thin;
         border-color: #F2F2F2;
