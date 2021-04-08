@@ -119,6 +119,8 @@ header h3
 #barre_de_recherche button
 {
     background-color:#0065FC;
+    color: white;
+    font-weight: bold;
     border-radius:0px 15px 15px 0px;
     border:none;
     padding:15px;
@@ -694,10 +696,8 @@ li
         border-radius: 15px;
         width: 47px;
         height: 47px;
-    }
-    #barre_de_recherche h2
-    {
-        visibility: hidden;
+        font-size: 0;
+        
     }
     #barre_de_recherche
     {
