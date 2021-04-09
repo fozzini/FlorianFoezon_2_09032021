@@ -542,7 +542,7 @@ li
 
 /*Media-queries tablettes*/
 
-@media all and (max-width:991px)
+@media (max-width:991px)
 {
 
     /*body*/
@@ -611,7 +611,7 @@ li
 
 /*Media-queries portables*/
 
-@media all and (max-width:790px)
+@media (max-width:790px)
 {
     body
     {
@@ -860,7 +860,7 @@ li
     }   
 }
 /*très petits écrans*/
-@media all and (max-width:675px)
+@media (max-width:675px)
 {
     .vignettes_simple, #pomègues, #frioul,.vignettes_double
     {
