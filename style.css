@@ -444,8 +444,7 @@ aside
 }
 .vignettes_simple .images_section2
 {
-    padding: 45%;
-    
+    padding: 45%;    
 }
 .vignettes_double .images_section2
 {
@@ -467,7 +466,6 @@ aside
     border-radius: 15px;
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     background-color: white;
-
 }
 #Vieux_port
 {
@@ -478,7 +476,6 @@ aside
     background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     background-size:cover;
     padding: 23%;
-
 }
 #Iles_du_Frioul
 {
@@ -546,11 +543,9 @@ li
 {
 
     /*body*/
-
     main
     {
-        padding: 0;
-        
+        padding: 0;   
     }
     section
     {
@@ -559,7 +554,6 @@ li
     }
 
     /*aside*/
-
     aside
     {
         order: -1;
@@ -568,8 +562,7 @@ li
     }   
     #bloc_vignettes
     {
-        flex-direction: row;
-        
+        flex-direction: row;  
     }
     #bloc_vignettes a
     {
@@ -578,7 +571,6 @@ li
     }
 
     /*hébergement*/
-
     #hébergements
     {
         width:auto;
@@ -599,7 +591,6 @@ li
     }
    
     /*section2*/
-
     #section_2
     {
         height: auto;
@@ -676,8 +667,7 @@ li
     {   
         border-top: none;
         color: #0065FC;
-        border-bottom: 2px solid #0065FC;
-        
+        border-bottom: 2px solid #0065FC;  
     }
     header h6, header h3
     {
@@ -863,10 +853,8 @@ li
 @media (max-width:675px)
 {
     .vignettes_simple, #pomègues, #frioul,.vignettes_double
-    {
-        
-        height:190px;
-        
+    { 
+        height:190px;  
     }
     #section_2 .images_section2
     {
@@ -874,3 +862,28 @@ li
        
     } 
 }
+/*très petits écrans*/
+@media (max-width:600px)
+{
+    .vignettes_simple, #pomègues, #frioul,.vignettes_double
+    {  
+        height:160px; 
+    }  
+}
+@media (max-width:500px)
+{
+    .vignettes_simple, #pomègues, #frioul,.vignettes_double
+    {  
+        height:140px; 
+    }  
+}
+/*très petits écrans*/
+@media (max-width:400px)
+{
+    .vignettes_simple, #pomègues, #frioul,.vignettes_double
+    {  
+        height:120px; 
+    }  
+}
+
+
