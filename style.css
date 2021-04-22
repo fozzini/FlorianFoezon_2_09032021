@@ -30,7 +30,7 @@ body h6
 }
 body h2, #filtres a
 {
-    font-size:small;
+    font-size:12px;
     font-weight: bold;
     
 }
@@ -61,7 +61,8 @@ header
 }
 header h6
 {
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 header h3
 {
@@ -81,6 +82,7 @@ header h3
 #loisirs a:hover
 {
     border-top: 2px solid #0065FC;  
+    color : #DEEBFF;
 }
 #loisirs
 {
@@ -180,7 +182,7 @@ header h3
 {
     font-size: x-small;
     padding: 5px 7px 5px 7px;
-    margin: 10px;
+    margin: 10px 10px 10px 0px;
     color:#0065FC ;
     border-style: solid;
     border-width: 1px;
@@ -198,20 +200,19 @@ section
 section h6
 {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 #hébergements
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background: #F2F2F2;
-    width: 75%;
+    width: 70%;
     height: auto;
     margin: 0px 15px 0px 0px;
     border-radius: 15px;
-    padding: 25px;
-    margin-left: 0px;    
+    padding: 25px 0px 25px 25px;
+        
 }
 #hébergements h3
 {
@@ -231,12 +232,14 @@ section h6
     font-size:small;
     font-weight: bolder;
     color:black;
-    text-decoration: none;   
+    text-decoration: none;
+    margin-top: 25px;
+
 }
 .stars
 {
     display: flex;
-    font-size: x-small;
+    font-size: small;
     margin-top: 5px;
 }
 .bluestar
@@ -257,28 +260,29 @@ section h6
 {
     display:flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    height: auto;
+    justify-content: space-around;
 }
 #vignettes_hébergements a
 {
-    display:flex;
+
+    display: flex;
     flex-direction: column;
     background-color: white;
-    width: 30%;
-    height: 23%;
+    width: 28.5%;
+    height: 43%;
     border-style: solid;
     border-color: white;
-    padding-bottom: 80px;
     border-radius: 15px;
-    box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);   
+    box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
+    margin:0% 3.5% 3.5% 0%;
+     
 }
 .images_section1
 {   
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 20%;
+    padding: 22%;
     border-radius: 15px 15px 0px 0px;
 }
 .description_section1
@@ -319,18 +323,19 @@ aside
     display: flex;
     flex-direction: column;
     background: #F2F2F2;
-    width: 30%;
+    width: 27%;
     height: auto;
     border-radius: 15px;
-    padding: 25px;
-    margin-left: 0px;
+    padding: 30px 30px 0px 30px;
+    margin-left: 15px;
+
 }
 #bloc_vignettes
 {
-    height: 90%;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;   
+    height:100%;
+       
 }
 #bloc_vignettes h3
 {
@@ -360,6 +365,7 @@ aside
     height: 30%;
     background-color: white;
     text-decoration: none;
+    margin-bottom: 9%;
 }
 .images_aside
 {
@@ -393,7 +399,6 @@ aside
 }
 
 /*section2*/
-
 #section_2
 {
     display: flex;
@@ -420,7 +425,7 @@ aside
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 23%;
+    width: 22%;
     height:auto;
 }
 .images_section2
@@ -434,21 +439,23 @@ aside
     border-radius: 15px;
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     background-color: white; 
-    width: 23%;
+    width: 22%;
+    height:350px;
 }
 .vignettes_double
 {   
     border-radius: 15px;
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     background-color: white; 
+    height: 50%;
 }
 .vignettes_simple .images_section2
 {
-    padding: 45%;    
+    height: 90%;    
 }
 .vignettes_double .images_section2
 {
-    padding: 18%;
+    height: 77.5%;
 }
 .Nom_activité
 {
@@ -460,12 +467,33 @@ aside
     border-radius: 15px;
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     background-color: white;
+    height:60%;
+    margin-bottom: 15px;
 }
 #frioul
 {
     border-radius: 15px;
     box-shadow: 3px 2px 5px 1px  rgb(204, 202, 202);
     background-color: white;
+    height: 40%;
+    margin-top: 15px;
+}
+#pomègues .images_section2
+{
+    height: 82%;
+}
+#frioul .images_section2
+{
+    height: 73%;
+}
+
+#nd
+{
+    margin-bottom: 15px;
+}
+#pl
+{
+    margin-top: 15px;
 }
 #Vieux_port
 {
@@ -475,14 +503,13 @@ aside
 {
     background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     background-size:cover;
-    padding: 23%;
+    
 }
 #Iles_du_Frioul
 {
     background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     background-size:cover;
     background-position: center;
-    padding: 12%;
 }
 #Parc_National_des_Calanques
 {
@@ -502,6 +529,7 @@ aside
     background-position:center;
 }
 
+
 /*footer*/
 
 footer
@@ -509,7 +537,7 @@ footer
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
-    height: 50%;
+    height: auto;
     padding: 3%;
     border-style: solid;
     border-left: none;
@@ -545,7 +573,7 @@ li
     /*body*/
     main
     {
-        padding: 0;   
+        padding: 0;        
     }
     section
     {
@@ -558,16 +586,27 @@ li
     {
         order: -1;
         width:auto;
-        margin-bottom:25px;   
+        margin-bottom:25px;
+        margin-left: 0px;
+        padding: 25px 0px 25px 25px;
+        
     }   
+    .en-tête i
+    {
+        margin-right: 25px;
+    }
     #bloc_vignettes
     {
-        flex-direction: row;  
+        flex-direction: row;
+        justify-content: space-around;
+          
     }
     #bloc_vignettes a
     {
         height: 120px;
-        width: 280px;
+        width: 28.5%;
+        margin : 0% 3.5% 3.5% 0%;
+               
     }
 
     /*hébergement*/
@@ -596,6 +635,13 @@ li
         height: auto;
         width: auto;
         margin-bottom: 25px;
+    }
+    #Bloc_vignettes a
+    {
+        
+        margin-right: 3.5%;
+        
+               
     }
  
 }
@@ -672,6 +718,7 @@ li
     header h6, header h3
     {
         margin-left: 25px;
+        margin-bottom: 25px;
     }
     #loisirs a, #inscription a, #recherche, #filtres a
     {
@@ -744,6 +791,7 @@ li
     {
         padding-bottom: 15px;
     }
+    
     .en-tête i
     {
         font-size: x-large;
@@ -760,12 +808,12 @@ li
     #bloc_vignettes a
     {  
         width: auto;
-        height:120px ;
+        height:143px ;
         margin-bottom: 15px;
     }
     .images_aside
     {     
-        height:120px;
+        height:100%;
     }
 
     /*hébergements*/
@@ -788,12 +836,23 @@ li
         display: flex;
         flex-direction: column;
         width: auto;
-        margin-bottom: 15px;
-        height: auto;
+        margin-bottom: 25px;
+        height: 200px;
+    }
+    #hébergements a
+    {
+        font-size: large;
+    }
+   
+    #hébergements h3, #hébergements h4
+    {
+        margin:0px;
+        margin-top:5px;
     }
     .description_section1
     {
-        padding-bottom:10px ;
+       
+        height: 40%;
     }
 
        /*section2*/
@@ -824,16 +883,20 @@ li
     .vignettes_simple, #pomègues, #frioul,.vignettes_double
     {
         width: auto;
-        height:200px;
+        height:190px;
         margin-bottom: 25px;
         margin-right: 25px;
     }
     #section_2 .images_section2
     {
-        padding:10%;
+        height: 75%;
         background-size: cover;
         background-position:center;
     } 
+    #frioul
+    {
+        margin-top: 0px;
+    }
 
     /*footer*/
 
@@ -849,41 +912,7 @@ li
         padding-bottom:20px;
     }   
 }
-/*très petits écrans*/
-@media (max-width:675px)
-{
-    .vignettes_simple, #pomègues, #frioul,.vignettes_double
-    { 
-        height:190px;  
-    }
-    #section_2 .images_section2
-    {
-        padding:10%;
-       
-    } 
-}
-/*très petits écrans*/
-@media (max-width:600px)
-{
-    .vignettes_simple, #pomègues, #frioul,.vignettes_double
-    {  
-        height:160px; 
-    }  
-}
-@media (max-width:500px)
-{
-    .vignettes_simple, #pomègues, #frioul,.vignettes_double
-    {  
-        height:140px; 
-    }  
-}
-/*très petits écrans*/
-@media (max-width:400px)
-{
-    .vignettes_simple, #pomègues, #frioul,.vignettes_double
-    {  
-        height:120px; 
-    }  
-}
+
+
 
 
