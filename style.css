@@ -23,22 +23,30 @@ body
     height:auto;
     margin: 0px;
 }
-body h6
+body h1, .titre_section1, .en-tête h5, #section_2 h5
 {
-    font-weight: bold;
-    font-size: large;
+    font-weight: bolder;
+    font-size: 20px;
+    color:black;
 }
-body h2, #filtres a
+
+body h2, #filtres a, .footer h2, #recherche
+{
+    font-size: medium;
+    font-weight: bolder;
+    color: black;
+        
+}
+
+body h3, h4, li, #titre2, #vignettes_hébergements h4, .footer a
+{
+    font-size:14px;
+    color:rgb(78, 78, 78);
+    font-weight:100;
+}
+#vignettes_hébergements h4
 {
     font-size:12px;
-    font-weight: bold;
-    
-}
-body h3, h4, li
-{
-    font-size: small;
-    color:rgb(71, 71, 71);
-    font-weight:100;
 }
 header, main
 {
@@ -59,12 +67,12 @@ header
     justify-content:space-between;
     align-items:center;
 }
-header h6
+header h1
 {
-    margin-top: 2%;
+    
     margin-bottom: 1%;
 }
-header h3
+header #titre2
 {
     margin-top: 0px;
 }
@@ -197,10 +205,10 @@ section
     display: flex;
     height: auto;
 }
-section h6
+.titre_section1
 {
     margin-top: 15px;
-    margin-bottom: 25px;
+    margin-bottom:20px;
 }
 #hébergements
 {
@@ -214,22 +222,23 @@ section h6
     padding: 25px 0px 25px 25px;
         
 }
-#hébergements h3
+.description_section1 h3
 {
-    font-size:small;
+    font-size:14px;
     font-weight: bolder;
     color:black;
     margin:auto;
     margin-top: 5%;
 }
-#hébergements h4
+.description_section1 h4
 {
-    margin:auto;
-    margin-top:2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
 #hébergements a
 {
-    font-size:small;
+    font-size:15px;
     font-weight: bolder;
     color:black;
     text-decoration: none;
@@ -339,14 +348,15 @@ aside
 }
 #bloc_vignettes h3
 {
-    font-size:small;
+    font-size:14px;
     font-weight: bolder;
     color:black;
     margin-bottom: 5px;
 }
 #bloc_vignettes h4
 {
-    margin-top: 5px;
+    font-size: 12px;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 #bloc_vignettes .stars
@@ -405,7 +415,7 @@ aside
     flex-direction: column;
     width: 100%;
     height: auto;
-    margin-top:4%;  
+    margin-top:0%;  
     margin-bottom: 0%;
 }
 #Bloc_vignettes
@@ -461,6 +471,12 @@ aside
 {
     border-radius: 0px 0px 15px 15px;
     padding-left: 15px;   
+}
+#section_2 h2
+{
+    font-size: 12px;
+    color:black;
+    font-weight:bolder;
 }
 #pomègues
 {
@@ -545,6 +561,7 @@ footer
     border-right: none;
     border-color: rgb(226, 222, 222);
     border-width:thin;
+
 }
 .footer
 {
@@ -562,7 +579,7 @@ li
 .footer a
 {
     text-decoration: none;
-    color:black;
+    
 }
 
 /*Media-queries tablettes*/
@@ -594,6 +611,10 @@ li
     .en-tête i
     {
         margin-right: 25px;
+    }
+    #filtres a, #filtres h2
+    {
+        font-size:13px;
     }
     #bloc_vignettes
     {
@@ -659,13 +680,16 @@ li
     {
         font-size: medium;
     }
-    body h2
+    #titre2
     {
-        font-size: large;
+        margin-left:25px;
+        
     }
-    body h6
+    body h1
     {
-        font-size: x-large;
+        margin-left:25px;
+        margin-top:25px;
+        margin-bottom:15px;
     }
     /*header*/
     header
@@ -715,6 +739,8 @@ li
         color: #0065FC;
         border-bottom: 2px solid #0065FC;  
     }
+    #filtres a, #filtres h2
+  
     header h6, header h3
     {
         margin-left: 25px;
@@ -760,6 +786,7 @@ li
     {
         margin: 0px 15px 15px 0px;
     }
+   
     #information
     {
         margin-left:25px;   
@@ -845,9 +872,10 @@ li
     #hébergements a
     {
         font-size: large;
+        
     }
    
-    #hébergements h3, #hébergements h4
+    .description_section1 h3, .description_section1 h4
     {
         margin:0px;
         margin-top:5px;
@@ -875,7 +903,7 @@ li
         flex-direction: column;
         padding-left: 25px;   
     }
-    #section_2 h6
+    #section_2 h5
     {
         padding-left: 25px;
     }
@@ -896,6 +924,11 @@ li
         background-size: cover;
         background-position:center;
     } 
+    #section_2 h2
+    {
+    font-size: 16px;
+    
+    }
     #frioul
     {
         margin-top: 0px;
